@@ -11,6 +11,10 @@ app.get("/", (request, response) => {
   response.send("Hello world!");
 });
 
+app.get("/getfrfomapi", (request, response) => {
+  response.send("data from api");
+});
+
 app.get("*", (request, response) => {
   response.status(404).send("not found");
 });
