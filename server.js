@@ -15,6 +15,11 @@ app.get("/getfrfomapi", (request, response) => {
   response.send("data from api");
 });
 
+app.get("/getfrfomapi2", (request, response) => {
+  response.send("data from api2");
+});
+
+
 app.get("*", (request, response) => {
   response.status(404).send("not found");
 });
